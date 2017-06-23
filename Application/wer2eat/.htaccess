@@ -12,7 +12,7 @@ Options -Indexes
 	# If your page resides at http://www.example.com/mypage then use
 	# RewriteBase /mypage
 
-    RewriteBase /
+    RewriteBase /wer2eat
     RewriteRule ^assets/downloads/(.*) not_found [L]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
