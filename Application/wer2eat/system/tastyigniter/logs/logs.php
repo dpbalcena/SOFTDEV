@@ -467,3 +467,9 @@ ERROR - 2017-06-23 10:08:34 --> cURL: Error --> 22: The requested URL returned e
 ERROR - 2017-06-23 10:12:43 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\wer2eat\system\libraries\Email.php 1837
 ERROR - 2017-06-23 10:19:49 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\wer2eat\system\libraries\Email.php 1837
 ERROR - 2017-06-23 10:20:24 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\wer2eat\system\libraries\Email.php 1837
+ERROR - 2017-06-24 08:57:26 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\xampp\htdocs\wer2eat\system\tastyigniter\helpers\TI_directory_helper.php 58
+ERROR - 2017-06-25 06:47:08 --> Could not find the language line "help_fixed_offset"
+ERROR - 2017-06-25 06:48:02 --> 404 Page Not Found: Mail_templates/%7Bsite_logo%7D
+ERROR - 2017-06-25 07:18:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\wer2eat\extensions\cart_module\controllers\Admin_cart_module.php 86
+ERROR - 2017-06-25 07:19:49 --> cURL: Error --> 6: Could not resolve host: api.tastyigniter.com https://api.tastyigniter.com/v1/core/version/2.1.1/5.5.38/5.5.5-10.1.16-MariaDB
+ERROR - 2017-06-25 08:55:05 --> Feed_parser: error --> Exception: String could not be parsed as XML String could not be parsed as XML
