@@ -97,10 +97,7 @@
 								<?php if ($this->customer->isLogged()) { ?>
 									<li class="dropdown"><a class="dropdown-toggle clickable" data-toggle="dropdown" id="dropdownLabel1"><?php echo lang('menu_my_account'); ?> <span class="caret"></span></a>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownLabel1">
-                                            <li><a role="presentation" href="<?php echo site_url('account/orders'); ?>"><?php echo lang('menu_recent_order'); ?></a></li>
                                             <li><a role="presentation" href="<?php echo site_url('account/account'); ?>"><?php echo lang('menu_my_account'); ?></a></li>
-                                            <li><a role="presentation" href="<?php echo site_url('account/address'); ?>"><?php echo lang('menu_address'); ?></a></li>
-
 											<?php if ($this->config->item('reservation_mode') === '1') { ?>
 												<li><a role="presentation" href="<?php echo site_url('account/reservations'); ?>"><?php echo lang('menu_recent_reservation'); ?></a></li>
 											<?php } ?>

@@ -32,11 +32,8 @@
 					<div class="col-md-12">
 						<ul id="nav-tabs" class="nav nav-tabs nav-tabs-line">
 							<li class="active"><a href="#details" data-toggle="tab"><?php echo lang('text_my_details'); ?></a></li>
-							<li><a href="#address" data-toggle="tab"><?php echo lang('text_default_address'); ?></a></li>
-							<li><a href="#cart" data-toggle="tab"><?php echo lang('text_cart'); ?></a></li>
-							<li><a href="#orders" data-toggle="tab"><?php echo lang('text_orders'); ?></a></li>
 							<li><a href="#reservations" data-toggle="tab"><?php echo lang('text_reservations'); ?></a></li>
-							<li><a href="#inbox" data-toggle="tab"><?php echo sprintf(lang('text_inbox'), $inbox_total); ?></a></li>
+							</a></li>
 						</ul>
 					</div>
 
