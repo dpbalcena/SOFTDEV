@@ -473,3 +473,118 @@ ERROR - 2017-06-25 06:48:02 --> 404 Page Not Found: Mail_templates/%7Bsite_logo%
 ERROR - 2017-06-25 07:18:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\wer2eat\extensions\cart_module\controllers\Admin_cart_module.php 86
 ERROR - 2017-06-25 07:19:49 --> cURL: Error --> 6: Could not resolve host: api.tastyigniter.com https://api.tastyigniter.com/v1/core/version/2.1.1/5.5.38/5.5.5-10.1.16-MariaDB
 ERROR - 2017-06-25 08:55:05 --> Feed_parser: error --> Exception: String could not be parsed as XML String could not be parsed as XML
+ERROR - 2017-06-26 05:44:11 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\system\database\drivers\mysqli\mysqli_driver.php 296
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'flag' - Invalid query: ALTER TABLE `hm8vfvoge_countries`
+	ADD flag VARCHAR(255) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'start_date'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_coupons` DROP COLUMN `start_date`
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'end_date'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_coupons` DROP COLUMN `end_date`
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'validity' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD validity CHAR(15) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'fixed_date' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD fixed_date DATE DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'fixed_from_time' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD fixed_from_time TIME DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'fixed_to_time' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD fixed_to_time TIME DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'period_start_date' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD period_start_date DATE DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'period_end_date' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD period_end_date DATE DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'recurring_every' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD recurring_every VARCHAR(35) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'recurring_from_time' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD recurring_from_time TIME DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'recurring_to_time' - Invalid query: ALTER TABLE `hm8vfvoge_coupons`
+	ADD recurring_to_time TIME DEFAULT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown column 'ready_time' in 'hm8vfvoge_locations' - Invalid query: ALTER TABLE hm8vfvoge_locations CHANGE `ready_time` `delivery_time` INT(11) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'collection_time' - Invalid query: ALTER TABLE `hm8vfvoge_locations`
+	ADD collection_time INT(11) NOT NULL,
+	ADD options TEXT NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'delivery_charge'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_locations` DROP COLUMN `delivery_charge`
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'min_delivery_total'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_locations` DROP COLUMN `min_delivery_total`
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown table 'database.hm8vfvoge_menus_to_options' - Invalid query: DROP TABLE `hm8vfvoge_menus_to_options`
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'menu_option_id' - Invalid query: ALTER TABLE hm8vfvoge_menu_options CHANGE `option_id` `menu_option_id` INT(11) NOT NULL AUTO_INCREMENT
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'option_name'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_menu_options` DROP COLUMN `option_name`
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'option_price'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_menu_options` DROP COLUMN `option_price`
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'option_id' - Invalid query: ALTER TABLE `hm8vfvoge_menu_options`
+	ADD option_id INT(11) NOT NULL,
+	ADD menu_id INT(11) NOT NULL,
+	ADD required TINYINT(4) NOT NULL,
+	ADD option_values  TEXT NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Table 'hm8vfvoge_menu_option_values' already exists - Invalid query: CREATE TABLE `hm8vfvoge_menu_option_values` (
+	menu_option_value_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	menu_option_id INT(11) NOT NULL,
+	menu_id INT(11) NOT NULL,
+	option_id INT(11) NOT NULL,
+	option_value_id INT(11) NOT NULL,
+	new_price DECIMAL(15,2) NOT NULL,
+	quantity INT(11) NOT NULL,
+	subtract_stock TINYINT(4) NOT NULL
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+ERROR - 2017-06-26 05:44:54 --> Query error: Table 'hm8vfvoge_options' already exists - Invalid query: CREATE TABLE `hm8vfvoge_options` (
+	option_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	option_name VARCHAR(32) NOT NULL,
+	display_type VARCHAR(15) NOT NULL,
+	priority INT(11) NOT NULL
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+ERROR - 2017-06-26 05:44:54 --> Query error: Table 'hm8vfvoge_option_values' already exists - Invalid query: CREATE TABLE `hm8vfvoge_option_values` (
+	option_value_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	option_id INT(11) NOT NULL,
+	value VARCHAR(128) NOT NULL,
+	price DECIMAL(15,2) NOT NULL,
+	priority INT(11) NOT NULL
+) DEFAULT CHARACTER SET = utf8 COLLATE = utf8_general_ci
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown column 'order_option_id' in 'hm8vfvoge_order_menus' - Invalid query: ALTER TABLE hm8vfvoge_order_menus CHANGE `order_option_id` `option_values` TEXT NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Can't DROP 'option_id'; check that column/key exists - Invalid query: ALTER TABLE `hm8vfvoge_order_options` DROP COLUMN `option_id`
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown column 'option_name' in 'hm8vfvoge_order_options' - Invalid query: ALTER TABLE hm8vfvoge_order_options CHANGE `option_name` `order_option_name` VARCHAR(128) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown column 'option_price' in 'hm8vfvoge_order_options' - Invalid query: ALTER TABLE hm8vfvoge_order_options CHANGE `option_price` `order_option_price` DECIMAL(15,2) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Duplicate column name 'order_menu_id' - Invalid query: ALTER TABLE `hm8vfvoge_order_options`
+	ADD order_menu_id INT(11) NOT NULL,
+	ADD order_menu_option_id INT(11) NOT NULL,
+	ADD menu_option_value_id INT(11) NOT NULL
+ERROR - 2017-06-26 05:44:54 --> Query error: Unknown column 'menu_location' in 'hm8vfvoge_pages' - Invalid query: ALTER TABLE hm8vfvoge_pages CHANGE `menu_location` `navigation` TEXT NOT NULL
+ERROR - 2017-06-26 05:45:24 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\system\database\drivers\mysqli\mysqli_driver.php 296
+ERROR - 2017-06-26 05:49:09 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\system\database\drivers\mysqli\mysqli_driver.php 296
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'status' - Invalid query: ALTER TABLE `8zerhmxrq_extensions`
+	ADD status TINYINT(1) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'title' - Invalid query: ALTER TABLE `8zerhmxrq_extensions`
+	ADD title VARCHAR(255) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'status' - Invalid query: ALTER TABLE `8zerhmxrq_working_hours`
+	ADD status TINYINT(1) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'parent_id' - Invalid query: ALTER TABLE `8zerhmxrq_categories`
+	ADD parent_id INT(11) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'priority' - Invalid query: ALTER TABLE `8zerhmxrq_categories`
+	ADD priority INT(11) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'image' - Invalid query: ALTER TABLE `8zerhmxrq_categories`
+	ADD image VARCHAR(255) NOT NULL
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate entry '10971' for key 'PRIMARY' - Invalid query: INSERT INTO 8zerhmxrq_settings (`setting_id`, `sort`, `item`, `value`, `serialized`) VALUES (10971, 'prefs', 'default_themes', 'a:2:{s:5:"admin";s:18:"tastyigniter-blue/";s:4:"main";s:20:"tastyigniter-orange/";}', 1);
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate key name 'uniqueSlug' - Invalid query: ALTER TABLE 8zerhmxrq_permalinks ADD UNIQUE INDEX `uniqueSlug` (`slug`, `controller`);
+ERROR - 2017-06-26 05:49:42 --> Query error: Unknown column 'order_id' in '8zerhmxrq_reviews' - Invalid query: ALTER TABLE 8zerhmxrq_reviews CHANGE `order_id` `sale_id` INT(11)  NOT NULL;
+ERROR - 2017-06-26 05:49:42 --> Query error: Duplicate column name 'sale_type' - Invalid query: ALTER TABLE 8zerhmxrq_reviews ADD `sale_type` VARCHAR(32)  NULL  DEFAULT NULL  AFTER `sale_id`;
+ERROR - 2017-06-26 05:50:11 --> Severity: Error --> Maximum execution time of 30 seconds exceeded C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\system\database\drivers\mysqli\mysqli_driver.php 296
+ERROR - 2017-06-26 06:14:36 --> Could not find the language line "Food"
+ERROR - 2017-06-26 06:14:37 --> Could not find the language line "Food"
+ERROR - 2017-06-26 06:14:38 --> Could not find the language line "Food"
+ERROR - 2017-06-26 06:14:59 --> Could not find the language line "Food"
+ERROR - 2017-06-26 06:15:00 --> Could not find the language line "Food"
+ERROR - 2017-06-26 06:21:28 --> Severity: Parsing Error --> syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING), expecting ')' C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\admin\views\themes\tastyigniter-blue\theme_config.php 52
+ERROR - 2017-06-26 06:21:30 --> Severity: Parsing Error --> syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING), expecting ')' C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\admin\views\themes\tastyigniter-blue\theme_config.php 52
+ERROR - 2017-06-26 06:24:55 --> 404 Page Not Found: 
+ERROR - 2017-06-26 06:24:58 --> 404 Page Not Found: 
+ERROR - 2017-06-26 06:24:59 --> 404 Page Not Found: 
+ERROR - 2017-06-26 06:26:41 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:27:56 --> 404 Page Not Found: 
+ERROR - 2017-06-26 06:40:56 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:41:06 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:41:54 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:42:46 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:42:56 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:43:07 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:48:02 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:48:21 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:48:42 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 06:54:52 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 07:06:48 --> Query error: Duplicate entry 'main_address' for key 'item' - Invalid query: INSERT INTO `8zerhmxrq_settings` (`sort`, `item`, `value`, `serialized`) VALUES ('prefs', 'main_address', 'a:14:{s:11:\"location_id\";s:2:\"11\";s:13:\"location_name\";s:8:\"Lewisham\";s:9:\"address_1\";s:15:\"44 Darnley Road\";s:9:\"address_2\";s:0:\"\";s:4:\"city\";s:14:\"Greater London\";s:5:\"state\";s:0:\"\";s:8:\"postcode\";s:4:\"1700\";s:10:\"country_id\";s:3:\"222\";s:7:\"country\";s:14:\"United Kingdom\";s:10:\"iso_code_2\";s:2:\"GB\";s:10:\"iso_code_3\";s:3:\"GBR\";s:12:\"location_lat\";s:9:\"51.544060\";s:12:\"location_lng\";s:9:\"-0.053999\";s:6:\"format\";s:59:\"{address_1}\n{address_2}\n{city} {postcode} {state}\n{country}\";}', '1')
+ERROR - 2017-06-26 07:08:19 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126
+ERROR - 2017-06-26 07:09:15 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126
+ERROR - 2017-06-26 07:09:51 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126

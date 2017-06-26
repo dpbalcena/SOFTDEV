@@ -2,8 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title><?php echo sprintf(lang('text_title'), $text_heading); ?></title>
-	<link type="image/ico" rel="shortcut icon" href="<?php echo base_url('views/assets/favicon.ico'); ?>">
+	<title>Welcome</title>
     <link type="text/css" rel="stylesheet" href="<?php echo base_url('views/assets/bootstrap.min.css'); ?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('views/assets/font-awesome.min.css'); ?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url('views/assets/fonts.css'); ?>">
@@ -15,7 +14,6 @@
 			<div class="col-md-7 center-block">
 				<div class="row page-header">
 					<div class="col-xs-12 col-md-4 navbar-right">
-						<img src="<?php echo base_url('views/assets/tastyigniter-logo.png'); ?>" alt="TastyIgniter Logo">
 					</div>
 					<div class="col-xs-12 col-md-8">
 						<h1><?php echo $text_heading; ?></h1>

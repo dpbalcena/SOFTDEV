@@ -16,9 +16,9 @@
 				<div class="panel-heading">
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#opening-hours" data-toggle="tab"><?php echo lang('text_opening_hours'); ?></a></li>
-						<?php if ($has_delivery) { ?>
+						 <?php if ($has_delivery) { ?>
 							<li><a href="#delivery-hours" data-toggle="tab"><?php echo lang('text_delivery_hours'); ?></a></li>
-						<?php } ?>
+						<?php } ?> 
 						<?php if ($has_collection) { ?>
 							<li><a href="#collection-hours" data-toggle="tab"><?php echo lang('text_collection_hours'); ?></a></li>
 						<?php } ?>

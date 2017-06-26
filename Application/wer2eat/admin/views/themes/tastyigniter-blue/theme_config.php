@@ -23,35 +23,37 @@ $theme['nav_menu'] = array(
 	'kitchen' => array(
 		'class' => 'kitchen',
 		'icon' => 'fa-cutlery',
-		'title' => lang('menu_kitchen'),
+		'title' => 'Food',
 		'permission' => 'Admin.Menus|Admin.MenuOptions|Admin.Categories',
 		'child' => array(
 			'menus' => array('class' => 'menus', 'href' => site_url('menus'), 'title' => lang('menu_menu'), 'permission' => 'Admin.Menus'),
-			'menu_options' => array('class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'),
+			/* 'menu_options' => array('class' => 'menu_options', 'href' => site_url('menu_options'), 'title' => lang('menu_option'), 'permission' => 'Admin.MenuOptions'), */
 			'categories' => array('class' => 'categories', 'href' => site_url('categories'), 'title' => lang('menu_category'), 'permission' => 'Admin.Categories'),
 		)
 	),
 	'sales' => array(
 		'class' => 'sales',
-		'icon' => 'fa-bar-chart-o',
-		'title' => lang('menu_sale'),
-		'permission' => 'Admin.Orders|Admin.Reservations|Admin.Coupons',
-		'child' => array(
+		'icon' => 'fa fa-calendar',
+		'title' => 'Reservations',
+		'href' => site_url('reservations'),
+		'permission' => 'Admin.Reservations'
+/* 		'child' => array(
 			'orders' => array('class' => 'orders', 'href' => site_url('orders'), 'title' => lang('menu_order'), 'permission' => 'Admin.Orders'),
 			'reservations' => array('class' => 'reservations', 'href' => site_url('reservations'), 'title' => lang('menu_reservation'), 'permission' => 'Admin.Reservations'),
 			'coupons' => array('class' => 'coupons', 'href' => site_url('coupons'), 'title' => lang('menu_coupon'), 'permission' => 'Admin.Coupons'),
-		)
+		) */
 	),
 	'marketing' => array(
 		'class' => 'marketing',
-		'icon' => 'fa-line-chart',
-		'title' => lang('menu_marketing'),
-		'permission' => 'Admin.Banners|Admin.Reviews|Admin.Messages',
-		'child' => array(
+		'icon' => 'fa fa-comment',
+		'title' => 'Reviews',
+		'href' => site_url('reviews'),
+		'permission' => 'Admin.Reviews',
+/* 		'child' => array(
 			'reviews' => array('class' => 'reviews', 'href' => site_url('reviews'), 'title' => lang('menu_review'), 'permission' => 'Admin.Reviews'),
 			'messages' => array('class' => 'messages', 'href' => site_url('messages'), 'title' => lang('menu_messages'), 'permission' => 'Admin.Messages'),
 			'banners' => array('class' => 'banners', 'href' => site_url('banners'), 'title' => lang('menu_banner'), 'permission' => 'Admin.Banners'),
-		)
+		) */
 	),
 	'restaurant' => array(
 		'class' => 'restaurant',
@@ -59,7 +61,7 @@ $theme['nav_menu'] = array(
 		'title' => lang('menu_restaurant'),
 		'permission' => 'Admin.Locations|Admin.Tables',
 		'child' => array(
-			'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => lang('menu_location'), 'permission' => 'Admin.Locations'),
+			'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => 'Branches', 'permission' => 'Admin.Locations'),
 			'tables' => array('class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
 		)
 	),
@@ -70,11 +72,11 @@ $theme['nav_menu'] = array(
 		'permission' => 'Admin.Customers|Admin.CustomerGroups|Admin.CustomersOnline|Admin.Staffs|Admin.StaffGroups',
 		'child' => array(
 			'customers' => array('class' => 'customers', 'href' => site_url('customers'), 'title' => lang('menu_customer'), 'permission' => 'Admin.Customers'),
-			'customer_groups' => array('class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
-			'customers_online' => array('class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'),
+			/* 'customer_groups' => array('class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
+			'customers_online' => array('class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'), */
 			'staffs' => array('class' => 'staffs', 'href' => site_url('staffs'), 'title' => lang('menu_staff'), 'permission' => 'Admin.Staffs'),
 			'staff_groups' => array('class' => 'staff_groups', 'href' => site_url('staff_groups'), 'title' => lang('menu_staff_group'), 'permission' => 'Admin.StaffGroups'),
-			'activities' => array('class' => 'activities', 'href' => site_url('activities'), 'title' => lang('menu_activities'), 'permission' => 'Admin.Activities'),
+			/* 'activities' => array('class' => 'activities', 'href' => site_url('activities'), 'title' => lang('menu_activities'), 'permission' => 'Admin.Activities'), */
 		)
 	),
 	'extensions' => array(
@@ -96,7 +98,7 @@ $theme['nav_menu'] = array(
 			'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
 		)
 	),
-	'localisation' => array(
+/* 	'localisation' => array(
 		'class' => 'localisation',
 		'icon' => 'fa-globe',
 		'title' => lang('menu_localisation'),
@@ -110,7 +112,7 @@ $theme['nav_menu'] = array(
 	        'ratings' => array('class' => 'ratings', 'href' => site_url('ratings'), 'title' => lang('menu_rating'), 'permission' => 'Admin.Ratings'),
 	        'statuses' => array('class' => 'statuses', 'href' => site_url('statuses'), 'title' => lang('menu_status'), 'permission' => 'Admin.Statuses'),
         )
-	),
+	), */
 	'system' => array(
 		'class' => 'system',
 		'icon' => 'fa-cog',
