@@ -7,51 +7,6 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-xs-4 stat-icon">
-                                <span class="bg-red"><i class="fa fa-line-chart fa-2x"></i></span>
-                            </div>
-                            <div class="col-xs-8 stat-content">
-                                <span class="stat-text text-red sales"><?php echo lang('text_dash_dash'); ?></span>
-                                <span class="stat-heading text-red"><?php echo lang('text_total_sale'); ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-4 stat-icon">
-                                <span class="bg-blue"><i class="stat-icon fa fa-users fa-2x"></i></span>
-                            </div>
-                            <div class="col-xs-8 stat-content">
-                                <span class="stat-text text-blue customers"><?php echo lang('text_dash_dash'); ?></span>
-                                <span class="stat-heading text-blue"><?php echo lang('text_total_customer'); ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-4 stat-icon">
-                                <span class="bg-green"><i class="stat-icon fa fa-shopping-cart fa-2x"></i></span>
-                            </div>
-                            <div class="col-xs-8 stat-content">
-                                <span class="stat-text text-green orders"><?php echo lang('text_dash_dash'); ?></span>
-                                <span class="stat-heading text-green"><?php echo lang('text_total_order'); ?></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-lg-3">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-xs-4 stat-icon">
                                 <span class="bg-primary"><i class="stat-icon fa fa-calendar fa-2x"></i></span>
                             </div>
                             <div class="col-xs-8 stat-content">
@@ -122,14 +77,7 @@
                     </div>
                     <div id="statistics">
                         <ul class="list-group text-sm">
-                            <li class="list-group-item"><?php echo lang('text_total_sale'); ?> <span class="text-red sales"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_lost_sale'); ?> <span class="text-yellow lost_sales"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_cash_payment'); ?><span class="text-primary cash_payments"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_customer'); ?> <span class="text-blue customers"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_order'); ?> <span class="text-green orders"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_delivery_order'); ?> <span class="text-success delivery_orders"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_collection_order'); ?> <span class="text-info collection_orders"><?php echo lang('text_zero'); ?></span></li>
-                            <li class="list-group-item"><?php echo lang('text_total_completed_order'); ?> <span class="text-danger orders_completed"><?php echo lang('text_zero'); ?></span></li>
+                            
                             <li class="list-group-item"><?php echo lang('text_total_reserved_table'); ?><span class="text-primary tables_reserved"><?php echo lang('text_zero'); ?></span></li>
                         </ul>
                     </div>
@@ -142,27 +90,6 @@
         <div>
 			<div class="row">
 				<div class="col-sm-12 col-md-6">
-					<div class="panel panel-default">
-						<div class="panel-heading"><h3 class="panel-title"><?php echo lang('text_complete_setup'); ?></h3></div>
-						<div class="panel-body">
-                            <h5><?php echo lang('text_progress_summary'); ?></h5>
-						</div>
-                        <div class="list-group check-list-group">
-                            <a href="<?php echo site_url('settings#location'); ?>" class="list-group-item">
-                                <span class=""><?php echo lang('text_settings_progress'); ?></span>
-                            </a>
-                            <a href="<?php echo site_url('menus'); ?>" class="list-group-item">
-                                <span class=""><?php echo lang('text_menus_progress'); ?></span>
-                            </a>
-                            <a href="<?php echo site_url('themes'); ?>" class="list-group-item">
-                                <span class=""><?php echo lang('text_design_progress'); ?></span>
-                            </a>
-                            <a href="<?php echo site_url('settings#mail'); ?>" class="list-group-item">
-                                <span class=""><?php echo lang('text_email_progress'); ?></span>
-                            </a>
-                        </div>
-                        <div class="panel-footer"></div>
-                    </div>
 
                     <div class="panel panel-default panel-activities">
                         <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;<?php echo lang('text_recent_activity'); ?></h3></div>
@@ -191,20 +118,6 @@
                 </div>
 
                 <div class="col-sm-12 col-md-6">
-                    <?php if ($news_feed) { ?>
-                        <div class="panel panel-default panel-news-feed">
-                            <div class="panel-heading"><h3 class="panel-title"><i class="fa fa-rss"></i>&nbsp;&nbsp;<?php echo lang('text_news'); ?></h3></div>
-                            <div class="list-group">
-                                <?php foreach ($news_feed as $feed) { ?>
-                                    <a class="list-group-item" target="_blank" href="<?php echo $feed['link']; ?>">
-                                        <h5 class="text-primary"><?php echo $feed['title']; ?></h5>
-                                        <span class="text-muted"><?php echo strip_tags(substr($feed['description'], 0, 75)).'...'; ?></span>
-                                    </a>
-                                <?php } ?>
-                            </div>
-                            <div class="panel-footer"></div>
-                        </div>
-                    <?php } ?>
 
                     <?php if ($top_customers) { ?>
                         <div class="panel panel-default panel-top-customers">
@@ -366,9 +279,9 @@ var myAreaChart = Morris.Area({
     element: 'chart-holder',
     data: [],
     xkey: 'time',
-    ykeys: ['customers', 'orders', 'reservations', 'reviews'],
-    labels: ['Total customer', 'Total order', 'Total reservation', 'Total reviews'],
-    lineColors: ['#63ADD0', '#5CB85C', '#337AB7', '#D9534F'],
+    ykeys: ['reservations'],
+    labels: ['Total reservation'],
+    lineColors: ['#63ADD0'],
     parseTime: false,
     behaveLikeLine: false,
     resize: true,

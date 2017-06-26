@@ -61,7 +61,7 @@ $theme['nav_menu'] = array(
 		'title' => lang('menu_restaurant'),
 		'permission' => 'Admin.Locations|Admin.Tables',
 		'child' => array(
-			'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => 'Branches', 'permission' => 'Admin.Locations'),
+			'locations' => array('class' => 'locations', 'href' => site_url('locations'), 'title' => 'Add restaurant', 'permission' => 'Admin.Locations'),
 			'tables' => array('class' => 'tables', 'href' => site_url('tables'), 'title' => lang('menu_table'), 'permission' => 'Admin.Tables'),
 		)
 	),
@@ -74,8 +74,8 @@ $theme['nav_menu'] = array(
 			'customers' => array('class' => 'customers', 'href' => site_url('customers'), 'title' => lang('menu_customer'), 'permission' => 'Admin.Customers'),
 			/* 'customer_groups' => array('class' => 'customer_groups', 'href' => site_url('customer_groups'), 'title' => lang('menu_customer_group'), 'permission' => 'Admin.CustomerGroups'),
 			'customers_online' => array('class' => 'customers_online', 'href' => site_url('customers_online'), 'title' => lang('menu_customer_online'), 'permission' => 'Admin.CustomersOnline'), */
-			'staffs' => array('class' => 'staffs', 'href' => site_url('staffs'), 'title' => lang('menu_staff'), 'permission' => 'Admin.Staffs'),
-			'staff_groups' => array('class' => 'staff_groups', 'href' => site_url('staff_groups'), 'title' => lang('menu_staff_group'), 'permission' => 'Admin.StaffGroups'),
+			'staffs' => array('class' => 'staffs', 'href' => site_url('staffs'), 'title' => 'Restaurant owners', 'permission' => 'Admin.Staffs'),
+			'staff_groups' => array('class' => 'staff_groups', 'href' => site_url('staff_groups'), 'title' => 'Restaurant owners groups', 'permission' => 'Admin.StaffGroups'),
 			/* 'activities' => array('class' => 'activities', 'href' => site_url('activities'), 'title' => lang('menu_activities'), 'permission' => 'Admin.Activities'), */
 		)
 	),
@@ -95,7 +95,7 @@ $theme['nav_menu'] = array(
 			'pages' => array('class' => 'pages', 'href' => site_url('pages'), 'title' => lang('menu_page'), 'permission' => 'Site.Pages'),
 			'layouts' => array('class' => 'layouts', 'href' => site_url('layouts'), 'title' => lang('menu_layout'), 'permission' => 'Site.Layouts'),
 			'themes' => array('class' => 'themes', 'href' => site_url('themes'), 'title' => lang('menu_theme'), 'permission' => 'Site.Themes'),
-			'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'),
+			/* 'mail_templates' => array('class' => 'mail_templates', 'href' => site_url('mail_templates'), 'title' => lang('menu_mail_template'), 'permission' => 'Admin.MailTemplates'), */
 		)
 	),
 /* 	'localisation' => array(

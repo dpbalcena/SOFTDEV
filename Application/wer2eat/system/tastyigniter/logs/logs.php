@@ -588,3 +588,5 @@ ERROR - 2017-06-26 07:06:48 --> Query error: Duplicate entry 'main_address' for 
 ERROR - 2017-06-26 07:08:19 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126
 ERROR - 2017-06-26 07:09:15 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126
 ERROR - 2017-06-26 07:09:51 --> Severity: Warning --> implode(): Invalid arguments passed C:\Users\BALCENA\Desktop\GitHub\SOFTDEV-QUALITY\Application\wer2eat\main\controllers\Local.php 126
+ERROR - 2017-06-26 07:35:30 --> 404 Page Not Found: /index
+ERROR - 2017-06-26 07:36:39 --> 404 Page Not Found: /index
